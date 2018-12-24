@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: calibri,Helvetica,Arial;
+    font-size: 14px;
+    color: #333333;
+}
+
+.desktop {
+
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    background: #222222;
+    width: 1920px;
+    height: 1080px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+.workspace {
+
+    position: relative;
+    background: #222222;
+    width: 100%;
+    height: calc(100% - 32px);
+    left: 0px;
+
+
+}
+
+.taskbar {
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 48px;
+    background: #333333;
+    color: #DDD;
+    
+
+}
+
+.starticon {
+
+    position: relative;
+    background: royalblue;
+    display: block;
+    width: 96px;
+    height: 48px;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    color: #CCCCCC;
+    cursor: pointer;
+
+}
+
+.starticon-label {
+    
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+.startmenu {
+    position: absolute;
+    bottom: 48px;
+    background: #444444;
+    width: 512px;
+    height: 600px;
+}
