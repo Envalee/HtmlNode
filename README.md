@@ -33,6 +33,7 @@ Simple Span with Hello World Text:
 var node = new HtmlNode({
   tag : 'div',
   id : 'my-span-with-hello-world',
+  style: 'color: red',
   childs: [
     {
       tag: 'span',
