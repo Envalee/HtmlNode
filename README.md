@@ -27,14 +27,46 @@ create a new object.
 
 #### Examples
 
+Simple Span with Hello World Text:
 ```javascript
 // Exmaple for simple Span in Div
 var node = new HtmlNode({
   tag : 'div',
+  id : 'my-span-with-hello-world',
   childs: [
     {
       tag: 'span',
       content: 'Hello World!'
+    }
+  ]
+});
+// Render the node to the body
+node.render('body');
+
+```
+
+SVG Element:
+```javascript
+// Exmaple for SVG
+var node = new HtmlNode({
+  tag : 'svg',
+  namespace: 'svg',
+  class : 'my-svg',
+  attributes : {
+    viewBox : "-100 -100 200 200",
+    width: 200,
+    height: 200
+  },
+  childs: [
+    {
+      namespace: 'svg',
+      tag: 'circle',
+      attributes: {
+        fill: "red",
+        r: 95,
+        cx: 0,
+        cy: 0
+      }
     }
   ]
 });
